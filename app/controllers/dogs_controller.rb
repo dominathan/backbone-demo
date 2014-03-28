@@ -5,11 +5,14 @@ class DogsController < ApplicationController
   # GET /dogs.json
   def index
     @dogs = Dog.all
+    @dog = Dog.new
 
 
     respond_to do |format|
       format.html
       format.json { render :xml => @dogs }
+    end
+
   end
 
   # GET /dogs/1

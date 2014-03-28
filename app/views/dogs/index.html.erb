@@ -1,3 +1,9 @@
+<div id="dogs_app">
+  <h1>New Dog</h1>
+<%= render 'form' %>
+
+
+
 <h1>Listing dogs</h1>
 
 <table>
@@ -27,3 +33,19 @@
 <br>
 
 <%= link_to 'New Dog', new_dog_path %>
+
+<h1>Listing Dogs via Backbone </h1>
+
+<table id="dog_table">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+</table>
+
+</div>
+
+<script id="dog_template" type ="text/html">
+  <td>{{name}}</td>
+  <td>{{age}}</td>
+</script>
